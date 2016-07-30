@@ -26,7 +26,7 @@ dependencies {
 	compile 'org.ros.rosjava_messages:sensor_msgs:1.11.7'
 
  	// OpenCV
-	compile 'nu.pattern:opencv:2.4.9-5'  
+	compile 'org.openpnp:opencv:2.4.11-2'
 	compile files('./Imshow.jar')
 }
 task wrapper(type: Wrapper) {

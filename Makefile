@@ -1,8 +1,10 @@
-run: 
+run:
+	@./gradlew run
+install:
 	@./gradlew installApp
 update:
 	@./gradlew installApp --refresh-dependencies
-idea: 
+idea:
 	@./gradlew idea
-clean: 
-	@./gradlew clean 
+clean:
+	@./gradlew clean

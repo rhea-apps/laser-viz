@@ -3,8 +3,9 @@ apply plugin: 'idea'
 apply plugin: 'application'
 mainClassName = 'laser_viz.StreamMerger'
 
-repositories {		
+repositories {
 	mavenCentral()
+	jcenter()
 	maven { url "https://github.com/rosjava/rosjava_mvn_repo/raw/master/" }
 	maven { url "https://jitpack.io" }
 }
@@ -12,12 +13,12 @@ repositories {
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
-configurations.all {    
+configurations.all {
     resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
 }
-dependencies {	
+dependencies {
 	// RHEA
-	compile 'com.github.rhea-flow:rhea-core:-SNAPSHOT'  
+	compile 'com.github.rhea-flow:rhea-core:-SNAPSHOT'
 	compile 'com.github.rhea-flow:rx-eval:-SNAPSHOT'
  	compile 'com.github.rhea-flow:ros-eval:-SNAPSHOT'
 	compile 'com.github.rhea-apps:cv-bridge:-SNAPSHOT'

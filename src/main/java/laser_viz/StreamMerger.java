@@ -46,7 +46,7 @@ public class StreamMerger {
 
         // Combine
         Stream.combineLatest(camera, laser, StreamMerger::embedLaser)
-//                .printAll();
+               // .printAll();
               .subscribe(window::showImage);
     }
 
@@ -60,7 +60,7 @@ public class StreamMerger {
                 Core.line(im, center, new Point(x, y), new Scalar(0, 0, 255));
             curAngle += l.getAngleIncrement();
         }
-        Core.circle(im, center, 2, new Scalar(0, 0, 0), -1);    
+        Core.circle(im, center, 2, new Scalar(0, 0, 0), -1);
         return im;
     }
 }
